@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>晚年无忧</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="apple-touch-icon-precomposed" href="static/images/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="static/css/amazeui.min.css" />
+    <link rel="stylesheet" href="static/css/admin.css">
+    <link rel="stylesheet" href="static/css/app.css">
+</head>
+
+<body data-type="generalComponents">
+
+
+    <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+
+        </div>
+        <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
+
+        </div>
+
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+        <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+
+
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                        <span class="tpl-header-list-user-nick">{{yonghu}}</span>
+                    </a>
+                   <script type="text/javascript">
+    function f1(){
+      window.location.href="/retry";
+    }
+
+</script>
+                    <ul class="am-dropdown-content">
+                        <li><a onclick="f1()"><span class="am-icon-power-off"></span> 退出</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="f1()" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="tpl-page-container tpl-page-header-fixed">
+
+
+        <div class="tpl-left-nav tpl-left-nav-hover">
+            <div class="tpl-left-nav-title">
+                晚年无忧
+          </div>
+            <div class="tpl-left-nav-list">
+                <ul class="tpl-left-nav-menu">
+                    <li class="tpl-left-nav-item">
+                        <a href="/index1" class="nav-link">
+                            <span>首页</span>
+                        </a>
+                    </li>
+
+ 					<li class="tpl-left-nav-item">
+                        <a href="/HTlist" class="nav-link">
+                            <span>合同管理</span>
+                        </a>
+                    </li>
+
+
+                    <li class="tpl-left-nav-item">
+                        <a href="/KHlist" class="nav-link">
+                            <span>客户管理</span>
+                        </a>
+                    </li>
+
+					<li class="tpl-left-nav-item">
+                        <a href="/YHlist" class="nav-link active">
+                            <span>用户管理</span>
+                        </a>
+                    </li>
+					<span>{{bn}}</span>
+
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+                                       function k1(){
+                                           var j=window.localStorage.getItem('kp');
+                                           var t=document.getElementById("df");
+                                           t.value=j;
+                                           document.getElementById("fc").click();
+                                       }
+                                       setTimeout("k1()",2);
+                                </script>
+
+                                <form method="post" action="/describ">
+                                    <input type="hidden" class="tpl-form-input" id="df" placeholder="" name="noo" >
+                                    <button type="submit" hidden id="fc" onclick="k1()" ></button>
+                                </form>
+
+
+        <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+               合同管理系统
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#">用户</a></li>
+
+            </ol>
+           <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 修改用户
+                    </div>
+
+                </div>
+
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="tpl-form-body tpl-form-line">
+                            <form class="am-form tpl-form-line-form" >
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">用户名<span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        {{yonghuming}}
+                                    </div>
+                                </div>
+
+                                 <div class="am-form-group">
+                                    <label for="mima" class="am-u-sm-3 am-form-label">密码<span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <span>{{mima}}</span>
+                                    </div>
+                                </div>
+								<div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-3 am-form-label">角色<span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <span>{{juese}}</span>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+								<button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success" onclick="window.location.href='/YHlist'">返回</button>
+
+								     </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/amazeui.min.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+
+</html>
