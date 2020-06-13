@@ -13,7 +13,8 @@
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //Meta-Tags -->
 
-	<!-- Style --> <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all">
+	<!-- Style --> <link rel="stylesheet" href="static/css/style1.css" type="text/css" media="all">
+	<link rel="stylesheet" href="static/css/option.css">
 <script type="text/javascript">{{script}}('{{wrong}}')</script>
 
 
@@ -45,10 +46,16 @@
 		<div class="register w3layouts agileits">
 			<h2>注 册</h2>
 			<form action="/regi" method="post" id="regist1">
-				<input type="text" Name="Userame1" placeholder="用户名" required="">
+				<input type="text" Name="UserID" placeholder="用户ID" required="">
+				<input type="text" Name="Username1" placeholder="用户名" required="">
 				<input type="password" Name="Password1" placeholder="密码" required="">
 				<input type="password" Name="Password2" placeholder="确认密码" required="">
-
+				<div class="">
+					<select name="drop">
+					<option value="0">老人</option>
+                    <option value="1">子女</option>
+				</select>
+				</div>
 			<div class="send-button w3layouts agileits">
 
 				<input type="submit" name="regist" value="注册">

@@ -14,6 +14,8 @@
 	<script src="static/js/html5.js"></script>
 	<![endif]-->
 </head>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript">{{script}}('{{wrong}}')</script>
 <body>
 <section class="site-header container">
 		<h1>MA5-Gallery</h1>
@@ -31,12 +33,16 @@
 	   var i=document.getElementById("file");
 	   alert(i.value);
 	}
+	function f2(){
+	     window.location.href="/fanhui";
+	}
 </script>
 <form action="/shangchuan" method="post" enctype="multipart/form-data">
 	<label for="flie">文件名</label>
 	<input id="'file" name="file" type="file">
 	<input type="submit" name="submit" value="提交">
 </form>
+<button onclick="f2()">返回</button>
 <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 </div>
 </body>

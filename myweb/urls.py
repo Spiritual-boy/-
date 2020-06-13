@@ -21,6 +21,7 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
     path('',views.login),
     path('index',views.logins),
+    path('regi',views.regist),
     path('index1',views.returnindex),
     path('photo',views.photo),
     path('family',views.family),
@@ -34,4 +35,6 @@ urlpatterns = [
     path('describ',views.describ),
     path('xinwen',views.new),
     path('shangchuan',views.shangchuan),
+    path('yuyin',views.yuyin),
+    path('fanhui',views.family),
 ]
